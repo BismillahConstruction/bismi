@@ -1,0 +1,14 @@
+<section id="projects">
+<div class="projects-container">
+    <h2 class="projects-heading">Our Projects</h2>
+    <div class="projects-section">
+      <div class="project-card" *ngFor="let project of projects">
+        <div class="ribbon">{{ project.year }}</div>
+        <img [src]="project.image" alt="{{ project.title }}" class="project-image">
+        <h3 class="card-title">{{ project.name }}</h3>
+        <p class="card-detail">{{ project.title }}</p>
+        <p class="card-description">{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

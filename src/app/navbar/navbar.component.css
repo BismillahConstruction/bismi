@@ -1,0 +1,40 @@
+/* Navbar styling */
+.navbar {
+    background-color: #000; /* Set background color to black */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow effect */
+  }
+  
+  /* Center align menu items on mobile devices */
+  @media (max-width: 991.98px) {
+    .navbar-collapse {
+      text-align: center;
+    }
+    
+    .navbar-nav {
+      margin: 0 auto; /* Center the menu items */
+      display: inline-block; /* Ensure menu items are inline for centering */
+    }
+    
+    .navbar-nav .nav-item {
+      display: block; /* Ensure each item takes a full line */
+      margin: 0; /* Remove margin */
+    }
+    
+    .navbar-nav .nav-link {
+      display: block;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  /* General styles for nav links */
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for nav links */
+  .navbar-nav .nav-link:hover {
+    color: #f0f0f0; /* Change text color on hover */
+    background-color: #343a40; /* Change background color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
+  

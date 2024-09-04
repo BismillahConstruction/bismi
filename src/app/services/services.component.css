@@ -1,0 +1,73 @@
+:host {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+}
+
+.services-section {
+  padding: 20px;
+  background: #f5f5f5; /* Light background for the whole section */
+  text-align: center; /* Center-align the section title and content */
+}
+
+.section-title {
+  font-size: 2rem; /* Adjust size as needed */
+  margin-bottom: 20px;
+  color: #333; /* Darker text color for contrast */
+  font-weight: bold; /* Make title bold */
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #ffffff; /* Card background */
+  border-radius: 12px;
+  box-shadow: 8px 8px 16px rgba(180, 180, 180, 0.3), -8px -8px 16px rgba(255, 255, 255, 0.8); /* Neumorphism shadows */
+  padding: 20px;
+  text-align: center;
+  width: calc(33.333% - 16px); /* Three cards per row, accounting for the gap */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgba(160, 160, 160, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.9); /* Hover effect */
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  color: #333; /* Darker text for contrast */
+}
+
+.service-card p {
+  color: #666; /* Slightly lighter text */
+}
+
+.service-details {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #444; /* Slightly darker text for details */
+}
+
+fa-icon {
+  font-size: 2rem;
+  color: #333; /* Icon color */
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .service-card {
+    width: calc(50% - 16px); /* Two cards per row on medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .service-card {
+    width: 100%; /* One card per row on small screens */
+  }
+}

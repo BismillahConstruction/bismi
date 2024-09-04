@@ -1,0 +1,13 @@
+<section id="elevations">
+<div class="image-gallery">
+    <h2>Image Gallery</h2>
+    <div class="gallery-grid">
+      <img *ngFor="let image of images" [src]="image.src" [alt]="image.alt" (click)="openFullscreen(image.src)" />
+    </div>
+  </div>
+  
+  <!-- Fullscreen Overlay -->
+  <div class="fullscreen-overlay" (click)="closeFullscreen()">
+    <img #fullscreenImage />
+  </div>
+</section>

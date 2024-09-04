@@ -1,0 +1,10 @@
+/* Hero Component CSS */
+.hero {
+    background: url('../../assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* Creates parallax effect */
+    background-position: center center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove any default margin */
+  }
+  
